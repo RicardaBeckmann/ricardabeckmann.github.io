@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/academicons.min.css"/>
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
@@ -22,9 +23,20 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<h1><a href="index.html">Dr Ricarda Beckmann</a></h1>
+						
+						<nav>
+						<a href="CV.html">CV</a>
+						<a href="publications.html">Publications</a>
+						<a href="Research.html">Research</a>
+						<a href="contact.html">Contact</a>
+						</nav>
+
+
+						<!--
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
+						-->
 					</header>
 
 				<!-- Menu -->
@@ -95,14 +107,14 @@
 							<section id="four" class="wrapper  style2">
 								<div class="inner">
 									<h2 class="major">Research</h2>
-									<p>My research focuses on hydrodynamical simulations of supermassive black holes in a variety of different contexts, from large scale cosmological simulations, via simulations of isolated galaxies or galaxy clusters, to idealised black hole accretion simulations. I am interested in the origin and evolution of supermassive black hole, and the impact of their feedback on their host galaxy.  I work primarily with the AMR code RAMSES, and the visualization package yt. A few pieces of my  work are presented in more detail below.</p>
+									<p>My research focuses on hydrodynamical simulations of supermassive black holes in a variety of different contexts, from large scale cosmological simulations, via simulations of isolated galaxies or galaxy clusters, to idealised black hole accretion simulations. I am interested in the origin and evolution of supermassive black hole across cosmic time, and the impact of their feedback on their host galaxy. A few of my papers and projects are highlighted in more detail below.</p>
 									<section class="features">
 
 										<article>
 											<a href="#" class="image"><img src="images/6zooms.png" alt="" /></a>
-											<h3 class="major">The origin of supermassive black holes </h3>
-											<p>Observed with masses in excess of a billion solar masses, at a time when the universe was only about a billion years old, the origin of the first supermassive black holes remains an unsolved question today. </p>
-											<a href="#" class="special">Learn more</a>
+											<h3 class="major">Zooming in on the first black holes </h3>
+											<p>Observed with masses in excess of a billion solar masses, at a time when the universe was only about a billion years old, the origin of the first supermassive black holes remains an unsolved question today. In the face of few observations from this era, simulations provide one tool to study the origin of these black holes. However, simulating the immediate black hole environment, without loosing the galactic and cosmological context, remains a huge computational challenge. I have worked extensively on extending the range of scales covered in a single simulation, to allow a detailed study of black hole evolution in a the context of their rapidly changing environment in the early universe.  </p>
+											<a href="#" class="special">More on the black hole zoom project</a>
 										</article>
 
 
@@ -110,23 +122,28 @@
 											<a href="#" class="image"><img src="images/Zdrag_pic.png" alt="" /></a>
 											<h3 class="major">Zooming in on black hole accretion</h3>
 
-											<!-- Technical section on BH zoom and accretion physics -->
-											<p>Simulating the coevolution of supermassive black holes and their host galaxies requires maximising the information on gas properties in the black hole environment, without loosing the galactic and cosmological context.  Pushing to new regimes also requires </p>
-											<a href="#" class="special">Learn more about black hole zoom</a>
+											<p> Many of the most popular current sub-grid algorithms, designed to include black hole physics on scales too small to be resolved in the simulation, date from an era before the recent improvements in resolution. To avoid introducing numerical artifacts when reaching new physical regimes, such as resolving the black hole gravitaitonal radius of influence with the black hole zoom project, requires these "tried and tested" methods to be carefully re-evaluated for their applicability in the new regime. In this paper, I conducted a numerical study of both the much-used Bondi-Hoyle-Lyttleton accretion algorithm, and the unresolved dynamical friction due to gas, in the case when the gravitational potential of the black hole is well resovled. </p>
+											<a href="#" class="special">Paper - Bondi or not bondi: ...</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<a href="#" class="image"><img src="images/horizon.png" alt="" /></a>
 
-   <!-- Feedback and HORIZON and newHorizon and what have you -->			<h3 class="major">Coevolution of black holes and their host galaxies</h3>
-											<p> Over their lifetime, supermassive black holes and their host galaxies show a remarkable correlation between their properties, suggesting their their evolution is closely linked.  </p>
-											<a href="#" class="special">Learn more about black hole-galaxy coevolution and black hole feedback</a>
+   <!-- Feedback and HORIZON and newHorizon and what have you -->			<h3 class="major">The cummulative impact of AGN feedback on their host galaxies</h3>
+											<p> Over their lifetime, supermassive black holes and their host galaxies show a remarkable correlation between their properties, suggesting their their evolution is closely linked.   </p>
+
+<a href="https://www.horizon-simulation.org/">Image: Horizon-AGN</a> 
+
+<br>
+<br>
+
+											<a href="#" class="special">Paper - ...</a>
 										</article>
 
 										<article>
 											<a href="#" class="image"><img src="images/cluster_xray.png" alt="" /></a>
 											<h3 class="major">The origin of cold gas in clusters</h3>
 											<p>Observations of nearby cluster, particuarly of Perseus, show extended cold gas filaments around the brightest cluster galaxy. Several kpc long but only severaltens of pc wide, these origin of these filaments is still under discussion. The turbulence induced by the jet of the central active galactic nucleus is thought to play an important role. </p>
-											<a href="#" class="special">Learn more</a>
+											<a href="#" class="special">More on the Halpha filament project</a>
 										</article>
 									</section>
 									<!-- <ul class="actions">
@@ -141,7 +158,8 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Contact</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+							<p></p>
+							<!--
 							<form method="post" action="#">
 								<div class="field">
 									<label for="name">Name</label>
@@ -159,18 +177,23 @@
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
 							</form>
+							-->
 							<ul class="contact">
-								<li class="fa-home">
+								<!--<li class="fa-home">
 									Untitled Inc<br />
 									1234 Somewhere Road Suite #2894<br />
 									Nashville, TN 00000-0000
-								</li>
-								<li class="fa-phone">(000) 000-0000</li>
-								<li class="fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								</li> -->
+<!-- 								<li class="fa-phone">(000) 000-0000</li>  -->
+								<li class="fa fa-envelope fa-1x">ricarda.beckmann@iap.fr</li>
+                                                                <li class="ai ai-orcid fa-1x"><a href="https://orcid.org/0000-0002-2850-0192">ORCID-id: 0000-0002-2850-0192</a></li>
+
+							        <!-- <li class="fa-home"> ORCID-id:</li> -->
+<!--								<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li> -->
+<!--								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li> -->
+<!--								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->
 							</ul>
+
 							<ul class="copyright">
 								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>

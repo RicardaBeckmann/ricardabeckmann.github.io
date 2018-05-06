@@ -1,6 +1,5 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
-
 /*
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
@@ -2383,7 +2382,8 @@
 				ul.contact li:before {
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
-					font-family: FontAwesome;
+					/*font-family: FontAwesome;*/
+					/*font-family: Academicons;*/
 					font-style: normal;
 					font-weight: normal;
 					text-transform: none !important;
@@ -2765,7 +2765,7 @@
 				margin: 0.875em 1.75em 0.875em 0;
 				width: calc(50% - 0.875em - 1px);
 			}
-
+<
 				.features article .image {
 					margin-bottom: 1.5em;
 					margin-left: -1.5em;
